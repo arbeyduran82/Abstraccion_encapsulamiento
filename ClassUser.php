@@ -1,0 +1,27 @@
+<?php
+  class User{
+    private $strName;
+    private $strEmail;
+    private $strPassword;
+
+    function __construct(string $name, string $email, string $password){
+        $this->strName = $name;
+        $this->strEmail = $email;
+        $this->strPassword = $password;
+  
+    }
+
+    public function getName():string{
+        return $this->strName;
+    }
+
+    public function getEmail():string{
+        return $this->strEmail;
+    }
+
+    public function getPassword():string{
+        return $this->strPassword;
+    }
+  }
+    
+?>
