@@ -10,7 +10,7 @@
         $this->strPassword = $password;
   
     }
-
+    //start getter method
     public function getName():string{
         return $this->strName;
     }
@@ -21,6 +21,11 @@
 
     public function getPassword():string{
         return $this->strPassword;
+    }
+
+    //start setter method
+    public function setPasswordChange(string $password){
+        $this->strPassword = $password;
     }
   }
     
